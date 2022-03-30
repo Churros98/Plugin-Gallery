@@ -1,0 +1,15 @@
+{
+    "id": "gallery",
+    "name": "Gallery",
+    "description": "Plugin for Azuriom",
+    "version": "1.0.0",
+    "url": "https://azuriom.com",
+    "authors": [
+        "Azuriom"
+    ],
+    "azuriom_api": "1.0.0",
+    "providers": [
+        "\\Azuriom\\Plugin\\Gallery\\Providers\\GalleryServiceProvider",
+        "\\Azuriom\\Plugin\\Gallery\\Providers\\RouteServiceProvider"
+    ]
+}
