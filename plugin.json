@@ -1,11 +1,11 @@
 {
     "id": "gallery",
     "name": "Gallery",
-    "description": "Plugin for Azuriom",
+    "description": "Gallery is a simple plugin for create cool gallery of you're project",
     "version": "1.0.0",
-    "url": "https://azuriom.com",
+    "url": "https://anarchiegaming.fr/",
     "authors": [
-        "Azuriom"
+        "Sweeeper"
     ],
     "azuriom_api": "1.0.0",
     "providers": [
