@@ -5,6 +5,7 @@ namespace Azuriom\Plugin\Gallery\Models;
 use Azuriom\Models\Traits\HasTablePrefix;
 use Azuriom\Models\Image;
 use Illuminate\Database\Eloquent\Model;
+use Azuriom\Plugin\Gallery\Models\Links;
 
 /**
  * @property int $id
@@ -32,4 +33,11 @@ class Category extends Model
     protected $fillable = [
         'name'
     ];
+
+    /**
+     * The attributes that are mass assignable.
+     */
+    public function links() {
+        return $this->hasMany(Links::class);
+    }
 }
