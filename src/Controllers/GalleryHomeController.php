@@ -8,5 +8,7 @@ use Azuriom\Plugin\Gallery\Models\Category;
 
 class GalleryHomeController extends Controller
 {
-    return view('gallery::index', ['datas' => Category::with('links.image')->get()]);
+    public function index() {
+        return view('gallery::index', ['datas' => Category::with('links.image')->get()]);
+    }
 }
