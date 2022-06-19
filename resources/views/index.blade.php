@@ -13,7 +13,7 @@
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                             @foreach($category->links as $link)
                             <div class="col">
-                                <img src="{{ $link->image->url() }}" class="img-small rounded" alt="{{ $link->image->name }}">
+                                <img src="{{ $link->image->url() }}" class="img-small img-fluid rounded" alt="{{ $link->image->name }}">
                             </div>
                             @endforeach
                         </div>

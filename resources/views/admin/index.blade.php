@@ -56,17 +56,13 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ plugin_asset('gallery', 'js/jquery-1.9.1.min.js') }}" defer></script>
     <script>
         function setCategory(image, category) {
-            $.ajax({
-                type:"POST",
-                headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                url:"{{ route('gallery.admin.set') }}",
-                data: { _method: "PUT", image: image, category: category }
-            });
+            axios.defaults.headers.post['X-CSRF-TOKEN'] = document.getElementsByName('csrf-token')[0].content;
+            axios.put('{{ route('gallery.admin.set') }}', {
+                image: image,
+                category: category,    
+            })
         }
     </script>
 @endpush
