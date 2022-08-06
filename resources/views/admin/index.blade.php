@@ -51,6 +51,8 @@
                     </tbody>
                 </table>
             </div>
+            
+            {{ $images->links() }}
         </div>
     </div>
 @endsection
