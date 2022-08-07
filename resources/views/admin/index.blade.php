@@ -52,7 +52,7 @@
                 </table>
             </div>
             
-            {{ $links }}
+            {{!! $links !!}}
         </div>
     </div>
 @endsection
