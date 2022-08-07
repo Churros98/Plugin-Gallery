@@ -35,7 +35,7 @@ class AdminController extends Controller
             $datas[] = $data;
         }
 
-        return view('gallery::admin.index', ['images' => $datas, 'categories' => Category::all()]);
+        return view('gallery::admin.index', ['images' => $datas, 'links' => $images->links(), 'categories' => Category::all()]);
     }
 
     /**
