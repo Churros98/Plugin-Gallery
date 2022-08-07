@@ -52,7 +52,7 @@
                 </table>
             </div>
             
-            {{ $images->links() }}
+            {{ $links }}
         </div>
     </div>
 @endsection
