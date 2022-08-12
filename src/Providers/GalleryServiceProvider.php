@@ -116,11 +116,6 @@ class GalleryServiceProvider extends BasePluginServiceProvider
      */
     protected function userNavigation()
     {
-        return [
-            'gallery' => [
-                'name' => trans('gallery::messages.title'), // Traduction du nom de l'onglet
-                'route' => 'gallery.home', // Route de la page
-            ]
-        ];
+        return [];
     }
 }
