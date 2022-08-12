@@ -3,6 +3,7 @@
 @section('title', trans('gallery::messages.title'))
 
 @section('content')
+    <style>.gallery-image{margin-bottom: 15px;}</style>
     @foreach($datas as $category)
         @if(!$category->links->isEmpty())
             <h1> {{ $category->name }}</h3><br/>
@@ -12,7 +13,7 @@
                     <div class="container">
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                             @foreach($category->links as $link)
-                            <div class="col" style="margin-bottom: 5px;">
+                            <div class="col gallery-image">
                                 <img src="{{ $link->image->url() }}" class="img-small img-fluid rounded" alt="{{ $link->image->name }}">
                             </div>
                             @endforeach
