@@ -3,7 +3,7 @@
 @section('title', trans('gallery::messages.title'))
 
 @section('content')
-    <style>.gallery-image{margin-bottom: 15px;}</style>
+    <style>.gallery-image{margin-bottom: 23px;}</style>
     @foreach($datas as $category)
         @if(!$category->links->isEmpty())
             <h1> {{ $category->name }}</h3><br/>
